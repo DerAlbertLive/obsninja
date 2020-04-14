@@ -674,8 +674,24 @@ if (urlParams.has('turn')){
         var turn = {};
         turn.username = "ts";
         turn.credential = "ts";
-        turn.urls = ["turn:ts.dev-days-online.de:443"];
+        turn.urls = ["turn:ts.dev-days-online.de:5349"];
         session.configuration.iceServers.push(turn);
+        var turn2 = {};
+        turn2.username = "ts";
+        turn2.credential = "ts";
+        turn2.urls = ["turn:ts.dev-days-online.de:3478"];
+        session.configuration.iceServers.push(turn2);
+		var turn3 = {};
+        turn3.username = "ts";
+        turn3.credential = "ts";
+        turn3.urls = ["turn:ts.dev-days-online.de:443"];
+        session.configuration.iceServers.push(turn3);
+        var turn4 = {};
+        turn4.username = "ts";
+        turn4.credential = "ts";
+        turn4.urls = ["turn:ts.dev-days-online.de:80"];
+        session.configuration.iceServers.push(turn4);
+
 }
 
 
